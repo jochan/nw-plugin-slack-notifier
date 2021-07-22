@@ -5,7 +5,7 @@
 Add this line to your Niiwin application's Gemfile:
 
 ```ruby
-gem 'nw-plugin-slack-notifier'
+gem 'nw_plugin_slack_notifier'
 ```
 
 And then execute:
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install nw-plugin-slack-notifier
+    $ gem install nw_plugin_slack_notifier
 
 ## Usage
 
@@ -28,7 +28,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/nw-plugin-slack-notifier.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/nw_plugin_slack_notifier.
 
 ## License
 

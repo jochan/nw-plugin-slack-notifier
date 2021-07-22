@@ -1,16 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
+
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "nw_plugin_slack_notifier/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "nw-plugin-slack-notifier"
+  spec.name          = "nw_plugin_slack_notifier"
   spec.version       = NwPluginSlackNotifier::VERSION
   spec.authors       = ["Joshua Chan"]
   spec.email         = ["jchan.is@gmail.com"]
 
   spec.summary       = "Niiwin Plugin to notify users of events using Slack"
-  spec.homepage      = "https://github.com/jochan/nw-plugin-slack-notifier"
+  spec.homepage      = "https://github.com/jochan/nw_plugin_slack_notifier"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -34,6 +35,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  # spec.add_dependency "niiwin"
 
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
