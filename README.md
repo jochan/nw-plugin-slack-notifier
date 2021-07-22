@@ -1,0 +1,1 @@
+# nw-plugin-slack-notifier
