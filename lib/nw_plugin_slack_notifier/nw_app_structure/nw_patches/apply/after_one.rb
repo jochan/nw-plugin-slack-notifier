@@ -4,16 +4,12 @@ module NwPluginSlackNotifier
       module Apply
         class AfterOne < Niiwin::NwInteraction
 
-          string :id
-          string :i_user_id
-          hash :nw_patch_effects_override, default: {}
+          object :interaction, class: Niiwin::NwAppStructure::NwPatches::Apply
 
           def execute
             puts "=============================="
             puts "PLUGIN TEST: After One"
             puts "=============================="
-
-            inputs
           end
 
         end
