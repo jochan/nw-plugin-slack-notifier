@@ -13,6 +13,9 @@ module NwPluginSlackNotifier
             puts "PLUGIN TEST: Before Two"
             puts "=============================="
 
+            # Modified input can be returned here
+            # inputs.merge(test_string: "Another Modified String")
+
             inputs
           end
 
