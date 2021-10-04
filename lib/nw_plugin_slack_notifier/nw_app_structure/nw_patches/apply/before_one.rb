@@ -4,9 +4,7 @@ module NwPluginSlackNotifier
       module Apply
         class BeforeOne < Niiwin::NwInteraction
 
-          string :id
-          string :i_user_id
-          hash :nw_patch_effects_override, default: {} # used for Niiwin core upgrades
+          object :interaction, class: Niiwin::NwAppStructure::NwPatches::Apply
 
           def execute
             puts "=============================="
