@@ -1,3 +1,8 @@
+require 'niiwin/nw_interaction'
+require 'niiwin/nw_loader/nw_plugins/initial_load_mixin'
+
+require 'nw_plugin_slack_notifier/version'
+require 'nw_plugin_slack_notifier/engine'
 require 'nw_plugin_slack_notifier/nw_loader/nw_plugins/initial_load'
 require 'nw_plugin_slack_notifier/nw_app_structure/nw_patches/apply/after_one'
 require 'nw_plugin_slack_notifier/nw_app_structure/nw_patches/apply/after_two'
