@@ -4,7 +4,7 @@ module NwPluginSlackNotifier
       module Apply
         class AroundOne < Niiwin::NwInteraction
 
-          object :interaction, class: Niiwin::NwAppStructure::NwPatches::Apply
+          object :interaction, class: "Niiwin::NwAppStructure::NwPatches::Apply"
           object :block, class: Proc
 
           def execute

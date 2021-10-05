@@ -4,7 +4,7 @@ module NwPluginSlackNotifier
       module Apply
         class AfterOne < Niiwin::NwInteraction
 
-          object :interaction, class: Niiwin::NwAppStructure::NwPatches::Apply
+          object :interaction, class: "Niiwin::NwAppStructure::NwPatches::Apply"
 
           def execute
             puts "=============================="
